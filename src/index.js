@@ -201,3 +201,15 @@ buttonCta.addEventListener("click", async (e) => {
     );
   }
 });
+
+// Funcionalidad para cerrar el banner de beta
+const bannerContainer = document.querySelector(
+  ".pointer-events-none.fixed.inset-x-0.bottom-0"
+);
+const dismissButton = document.querySelector('button[type="button"]');
+
+if (dismissButton && bannerContainer) {
+  dismissButton.addEventListener("click", () => {
+    bannerContainer.style.display = "none";
+  });
+}
