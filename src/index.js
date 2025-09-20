@@ -21,16 +21,19 @@ async function submitEmail(email) {
   try {
     await new Promise((resolve) => setTimeout(resolve, 5000));
 
-    const response = await fetch("http://localhost:3000/api/waitlist", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email: email,
-        project: "esdent",
-      }),
-    });
+    const response = await fetch(
+      "https://waitlist-server-five.vercel.app/api/waitlist",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: email,
+          project: "esdent",
+        }),
+      }
+    );
 
     if (response.ok) {
       return { success: true };
