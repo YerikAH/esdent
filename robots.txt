@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://esdent.com/sitemap.xml
+
+# Crawl-delay para ser considerado con los servidores
+Crawl-delay: 1
+
+# Permitir acceso a recursos importantes
+Allow: /assets/
+Allow: /index.css
+Allow: /index.js
+
+# Desalentar crawling de archivos innecesarios
+Disallow: /*.ico$
+Disallow: /*.webp$
+Disallow: /*.svg$
