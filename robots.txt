@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://esdent.com/sitemap.xml
+Sitemap: https://esdent.vercel.app/sitemap.xml
 
 # Crawl-delay para ser considerado con los servidores
 Crawl-delay: 1
